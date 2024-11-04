@@ -27,7 +27,12 @@ By using this solution, we aim to ensure that the Journey Planner widget meets e
 # Features
 
 1. **JourneyPlanner.feature** - Cover the scenarios to Validate the journey  based on criteria
+
 2. **JourneyPlannerNegative.feature** - Cover the scenarios to Validate the results with invalid data
+
+   `Note: Added additional Scenarios and ignored`
+
+   
 
 ## File Structure
 
@@ -46,8 +51,6 @@ By using this solution, we aim to ensure that the Journey Planner widget meets e
   To execute the tests,Open the Test Explorer and Run the Tests
   
   
-  
-  `Note: Added additional Scenarios and ignored`
   
   
 
