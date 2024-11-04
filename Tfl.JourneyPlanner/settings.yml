@@ -1,0 +1,7 @@
+url: https://tfl.gov.uk
+browserOptions: 
+  headless: true
+  width: 1920
+  height: 1080
+  startMaximized: true
+  recordVideo: true

@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ReqnrollObsoleteCodeBehindFiles Remove="Features\Calculator - Copy.feature.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="10.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+		<PackageReference Include="Microsoft.Playwright" Version="1.48.0" />
+		<PackageReference Include="Microsoft.Playwright.NUnit" Version="1.48.0" />
+		<PackageReference Include="Reqnroll.NUnit" Version="2.1.1" />
+		<PackageReference Include="Reqnroll.Autofac" Version="2.1.1" />
+		<PackageReference Include="nunit" Version="4.2.2" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+		<PackageReference Include="FluentAssertions" Version="6.12.1" />
+		<PackageReference Include="YamlDotNet" Version="16.1.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Drivers\" />
+		<Folder Include="Support\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Features\Calculator - Copy.feature.cs">
+	    <DependentUpon>%(Filename)</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="settings.yml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ReqnrollFeatureFiles Update="Features\Calculator - Copy.feature">
+	    <Visible>$(UsingMicrosoftNETSdk)</Visible>
+	    <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+	  </ReqnrollFeatureFiles>
+	</ItemGroup>
+
+</Project>
