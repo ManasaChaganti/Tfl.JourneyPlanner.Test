@@ -16,9 +16,9 @@ namespace Tfl.JourneyPlanner.Steps
         }
 
         [Given("the journey is planned from {string} to {string}")]
-        public async Task GivenTheJourneyIsPlannedFromTo(string p0, string p1)
+        public async Task GivenTheJourneyIsPlannedFromTo(string fromStation, string toStation)
         {
-            await planPage.PlanTheJourney(p0, p1);
+            await planPage.PlanTheJourney(fromStation, toStation);
         }
 
     }

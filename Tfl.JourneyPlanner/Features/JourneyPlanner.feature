@@ -36,6 +36,7 @@ Examples:
 
 @ignore
 Scenario: 6.Plan a journey  by selecting Arriving, validate Walking and Cycling journey time
+TODO: These are few additional scenarios that can be included 
 	Given the journey is planned from "<FromStation>" to "<ToStation>"
 	Then user selects Arriving
 	Then user clicks on plan for my journey

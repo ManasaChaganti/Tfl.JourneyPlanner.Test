@@ -38,8 +38,8 @@ namespace Tfl.JourneyPlanner.Steps
             await resultsPage.VerifyCompleteAccessInformation();
         }
 
-        [Then("Validate if widget is unable to plan the")]
-        public async Task ThenValidateIfWidgetIsUnableToPlanThe()
+        [Then("Validate if widget is unable to plan the Journey")]
+        public async Task ThenValidateIfWidgetIsUnableToPlanTheJourney()
         {
             await planPage.ValidateIfWidgetIsUnableToPlanTheJourney();
         }

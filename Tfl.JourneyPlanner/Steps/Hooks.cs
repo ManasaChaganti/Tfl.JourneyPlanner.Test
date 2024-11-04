@@ -7,9 +7,8 @@ using Tfl.JourneyPlanner.Pages;
 namespace Tfl.JourneyPlanner.Steps
 {
     [Binding]
-    public sealed class Hooks(PlanJourneyPage homePage)
+    public sealed class Hooks()
     {
-        public PlanJourneyPage HomePage { get; } = homePage;
 
         [BeforeTestRun]
         public static void BeforeTestRun()

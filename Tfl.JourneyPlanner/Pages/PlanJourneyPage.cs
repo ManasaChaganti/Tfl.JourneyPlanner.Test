@@ -19,6 +19,7 @@ public class PlanJourneyPage(IPage page, TestConfiguration configuration) : Base
         {
             await Page.EvaluateAsync("document.querySelector('#cb-cookieoverlay').style.display = 'none';");
         }
+        await Page.WaitForLoadStateAsync(LoadState.Load);
     }
 
     public async Task SetStation(string station, string destination)

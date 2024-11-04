@@ -41,10 +41,16 @@ By using this solution, we aim to ensure that the Journey Planner widget meets e
 
 - **`/Pages`** Contains the implementation of the step definitions
 
-  ![image-20241104033741489](C:\Users\my\AppData\Roaming\Typora\typora-user-images\image-20241104033741489.png)
-
   ## Running Tests
-  
+
   To execute the tests,Open the Test Explorer and Run the Tests
   
-  ![image-20241104034104415](C:\Users\my\AppData\Roaming\Typora\typora-user-images\image-20241104034104415.png)
+  
+  
+  `Note: Added additional Scenarios and ignored`
+  
+  
+
+**Video and Screen Recording with Playwright**
+
+This project uses `Playwright` to capture video recordings and screenshots during automated tests.
