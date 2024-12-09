@@ -11,7 +11,7 @@ namespace Tfl.JourneyPlanner.Steps
         [Given("user on the home page")]
         public async Task GivenUserOnTheHomePage()
         {
-            await planPage.NavigateAsync();
+            await planPage.Navigate();
         }
 
         [Given("the journey is planned from {string} to {string}")]
