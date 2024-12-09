@@ -7,10 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ReqnrollObsoleteCodeBehindFiles Remove="Features\TflJourneyPlanner - Copy.feature.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="10.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
@@ -25,22 +21,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Features\JourneyPlannerNegative.feature.cs">
-	    <DependentUpon>JourneyPlannerNegative.feature</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
 	  <None Update="settings.yml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ReqnrollFeatureFiles Update="Features\JourneyPlannerNegative.feature">
-	    <Visible>$(UsingMicrosoftNETSdk)</Visible>
-	    <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
-	  </ReqnrollFeatureFiles>
 	</ItemGroup>
 
 </Project>

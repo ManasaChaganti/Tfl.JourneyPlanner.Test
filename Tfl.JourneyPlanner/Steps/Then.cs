@@ -4,10 +4,8 @@ using Tfl.JourneyPlanner.Pages;
 namespace Tfl.JourneyPlanner.Steps
 {
     [Binding]
-    public sealed class Then(PlanJourneyPage planPage, JourneyResultsPage resultsPage, IPage page, JourneyPlannerContext context)
+    public sealed class Then(PlanJourneyPage planPage, JourneyResultsPage resultsPage)
     {
-        public IPage Page { get; } = page;
-        public JourneyPlannerContext context { get; } = context;
         [Then("user clicks on plan for my journey")]
         public async Task ThenUserClicksOnPlanForMyJourneyAsync()
         {

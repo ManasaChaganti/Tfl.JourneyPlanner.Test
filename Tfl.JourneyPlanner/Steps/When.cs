@@ -4,10 +4,8 @@ using Tfl.JourneyPlanner.Context;
 namespace Tfl.JourneyPlanner.Steps
 {
     [Binding]
-    public sealed class When( JourneyResultsPage resultsPage, IPage page, JourneyPlannerContext context)
+    public sealed class When( JourneyResultsPage resultsPage)
     {
-        public IPage Page { get; } = page;
-        public JourneyPlannerContext Context { get; } = context;
 
         [When("user update the journey")]
         public async Task WhenUserUpdateTheJourney()

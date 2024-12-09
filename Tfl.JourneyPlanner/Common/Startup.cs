@@ -84,7 +84,8 @@ public class Startup
         });
 
         builder.Populate(services);
-        builder.RegisterAssemblyTypes(typeof(PlanJourneyPage).Assembly).Where(x => x.IsAssignableTo<BasePage>())
+
+        builder.RegisterAssemblyTypes(typeof(BasePage).Assembly).Where(x => x.IsAssignableTo<BasePage>())
             .Where(x => x != typeof(BasePage)).InstancePerDependency();
         builder.AddReqnrollBindings<Startup>();
     }
